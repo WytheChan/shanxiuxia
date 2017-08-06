@@ -1,0 +1,479 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix:after,
+.claerfix:before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ============header style start================== */
+
+header {
+    height: 100vh;
+    padding: 100px 0 0 0;
+    margin-top: -100px;
+    background: url(../img/i_banner.png) no-repeat center;
+    background-size: cover;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+}
+
+.menu .logo img {
+    margin-top: 30px;
+}
+
+.menu nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.menu nav a {
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.menu nav .check {
+    margin-left: 20px;
+    background: #F37B46;
+    border-radius: 15px;
+}
+
+.menu nav .check:hover {
+    background: orangered;
+}
+
+.menu nav a:not(.check):hover {
+    color: #F37B46;
+}
+.menu.active{
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.menu.active nav a:not(.check){
+    color: #000;
+}
+.menu.active nav a:not(.check):hover{
+    color: #F37B46;
+}
+
+header .banner {
+    margin-top: 100px;
+    text-align: center;
+}
+
+header .banner h1 {
+    padding: 50px 0 30px;
+    font-size: 45px;
+    color: #fff;
+}
+
+header .banner p {
+    width: 40%;
+    margin: 0 auto;
+    line-height: 35px;
+    font-size: 18px;
+    color: #fff;
+}
+
+header .banner .search-box {
+    width: 50%;
+    margin: 80px auto 0;
+    position: relative;
+}
+
+header .banner .search-box .search {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    text-indent: 2em;
+    font-size: 18px;
+}
+
+header .banner .search-box .search-img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header .banner .contant {
+    width: 25%;
+    padding: 10px 0;
+    margin: 50px auto 0;
+    background: #F37B46;
+    border-radius: 30px;
+}
+
+header .banner .contant ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+header .banner .contant ul li+li {
+    border-left: 1px solid #fff;
+}
+
+header .banner .banner-arrow {
+    display: inline-block;
+    margin-top: 10px;
+    animation: aaa 1.5s ease-in;
+    transition: all 0.5s;
+}
+
+@keyframes aaa {
+    0% {
+        transform: translateY(-5px);
+    }
+    25% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* ============header style end================== */
+
+
+/* ============main style start================== */
+
+main .service {
+    text-align: center;
+}
+
+main .service h1 {
+    padding: 100px 0;
+    font-size: 60px;
+}
+
+main .service .ser-list {
+    display: flex;
+    display: -webkit-flex;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .service .ser-list li {
+    width: 20%;
+    padding: 0 10px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+main .service .ser-list li img {
+    display: inline-block;
+}
+
+main .service .ser-list li h3 {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #777371;
+}
+
+main .service .ser-list li p {
+    line-height: 25px;
+    font-size: 15px;
+    color: #777371;
+}
+
+main .banner2 .banner-item {
+    float: left;
+    width: 33.3%;
+    height: 200px;
+    overflow: hidden;
+}
+
+main .banner2 .banner-item img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+main .banner2 .banner-item img:hover {
+    transform: scale(1.1);
+}
+
+main .service-tab {
+    position: relative;
+    margin: 100px 0 0;
+}
+
+main .service-tab .repair {
+    position: absolute;
+    top: 0;
+    width: 35%;
+    z-index: 100;
+}
+
+main .service-tab .repair img {
+    width: 100%;
+    height: auto;
+    transform: translateX(-100%);
+    transition: all 1.5s ease;
+}
+
+
+main .service-tab .ser-tab-left {
+    position: absolute;
+    top: 220px;
+    width: 50%;
+    height: 350px;
+    background: #FFA65E;
+}
+
+main .service-tab .ser-tab-left .ser-tab-list {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+main .service-tab .ser-tab-left .ser-tab-list .ser-tab-item {
+    float: left;
+    height: 200px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+main .service-tab .ser-tab-left .ser-tab-list .ser-tab-item img {
+    display: inherit;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+main .service-tab .ser-tab-left .ser-tab-list .ser-tab-item p {
+    font-size: 18px;
+    color: #AA540D;
+}
+
+main .service-tab .ser-tab-left .ser-tab-list .ser-tab-item.active {
+    background: #FF9339;
+}
+
+main .service-tab .ser-tab-left .ser-tab-list .ser-tab-item.active p {
+    color: #fff
+}
+
+main .ser-tab-right {
+    width: 50%;
+    margin-top: 150px;
+}
+
+main .ser-tab-right .ser-tab-title img {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+main .ser-tab-right .ser-tab-title h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+main .ser-tab-right .ser-tab-title .ser-title-info {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #D3C5B9;
+}
+
+main .ser-tab-right ul li {
+    margin-bottom: 20px;
+}
+
+main .ser-tab-right ul li .num {
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: #D3C5B9;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+main .ser-tab-right ul li .ser-content {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+main .ser-tab-right ul li .ser-content h3 {
+    padding: 0 0 10px 0;
+    font-size: 18px;
+    color: #777371;
+}
+
+main .ser-tab-right ul li .ser-content p {
+    line-height: 20px;
+    font-size: 14px;
+    color: #777371;
+}
+
+main .ser-tab-wrap {
+    display: none;
+}
+
+main .ser-tab-wrap.active {
+    display: block;
+}
+
+main .partner h1 {
+    margin: 100px 0;
+    text-align: center;
+    font-size: 60px;
+}
+
+main .partner dl {
+    display: flex;
+    display: -webkit-flex;
+    display: inline-flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .partner dl dt {
+    font-size: 18px;
+    color: #777371;
+    margin-right: 30px;
+}
+
+main .partner dl dd {
+    margin: 0 30px;
+}
+
+main .partner dl .more {
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
+}
+
+main .partner dl .more a {
+    font-size: 14px;
+    color: #777371;
+}
+main .door-ser{
+    position:relative;
+    height: 300px; 
+    margin-top: 50px;
+    padding: 50px 0 0;
+    background: #E8E3E0;
+    overflow: hidden;
+}
+main .door-ser .door-btn{
+    position: relative;
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+    background: #F37B46;
+    border-radius:30px;
+   padding: 15px 0;
+   text-align: center;
+  z-index: 200;
+   font-size: 20px;
+    color:#fff; 
+}
+main .door-ser .repair2{
+    width: 100%;
+    height:auto;   
+     transform: translateY(100%) ; 
+     transition: all 2s ease;
+}
+/* ============main style end================== */
+
+/* ============footer style start================== */
+footer{
+    padding: 50px 0 10px;
+    background: #3c342d;
+}
+footer .footer-logo{
+    margin:0 0 30px -40px;
+}
+footer .footer-left{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-left dl dt{
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #746558;
+}
+footer .footer-left dl dd{
+    margin-bottom: 15px;
+}
+footer .footer-left dl dd a{  
+    font-size: 16px;
+    color:#bfb8b2;
+}
+footer .footer-left dl dd a:hover{
+    color: #fff;
+}
+footer .footer-right .qr-code{
+    margin-right: 50px;
+}
+footer .footer-right ul li{
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+footer .footer-right ul li img{
+    margin-right: 20px;
+}
+footer .footer-right ul .phone span{
+   font-size: 18px;
+   color: #777371;
+}
+footer .footer-right ul .online-ser span{
+    font-size: 18px;
+   color: #FF9339;
+}
+footer .footer-right ul .time{
+    margin: 50px 0 0 50px;
+    font-size: 14px;
+    color: #777371;
+}
+footer .companyNumber{
+    padding: 30px 0 0;
+    font-size: 16px;
+    color: #746558;
+}
+
+/* ============footer style end================== */
